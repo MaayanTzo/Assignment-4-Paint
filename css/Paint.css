@@ -1,3 +1,58 @@
 body {
     margin: 0;
+    display: flex;
 }
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    width: 800px;
+}
+.tools {
+    background-color: rgb(175, 173, 173);
+    height: 500px;
+    width: 200px;
+    margin-right: 10px;
+}
+.tools.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+}
+.tool-circle {
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+.tool-circle.one {
+    background-color: lightcoral;
+}
+.tool-circle.two {
+    background-color: lightblue;
+}
+.tool-circle.three {
+    background-color: yellow;
+}
+.tool-circle.four {
+    background-color: lightgreen;
+}
+.tool-circle.five {
+    background-color: lavender;
+}
+.canvas {
+    height: 500px;
+    width: 500px;
+    background-color: rgb(233, 216, 216);  
+}
+.circle {
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+  }
