@@ -6,6 +6,18 @@ function mouseDown() {
 function mouseUp() {
     mouseClicked = false;
 }
+var color = "lightcoral";
+
+var AllColors = document.getElementsByClassName("tool-circle");
+for (i=0; i<AllColors.length; i++) {
+    AllColors[i].addEventListener("click", function(e){
+        colorPicker(e);
+    })
+}
+
+function colorPicker(e){
+    color = e.target.id;
+}
 
 function getClickCoords(event) {
     var x = event.clientX;
@@ -14,28 +26,26 @@ function getClickCoords(event) {
         "x": x,
         "y": y
     };
-    drawCircle(coor);
+    drawCircle(coor, color);
 }
 
-function drawCircle(coords) {
+function drawCircle(coords, color) {
     if (mouseClicked == true) {
-    var newElement = document.createElement("span");
-    newElement.className = "circle";
-    newElement.style.position = "absolute";
-    newElement.style.left = coords.x + "px";
-    newElement.style.top = coords.y + "px";
-    var par = document.getElementById("canvas");
-    par.appendChild(newElement);
-/*    } else if (mouseClicked == false) {
-        console.log(false); */
+        var newElement = document.createElement("span");
+        newElement.style.position = "absolute";
+        newElement.style.left = coords.x + "px";
+        newElement.style.top = coords.y + "px";
+        var par = document.getElementById("canvas");
+        newElement.className = "tool-circle";
+        newElement.style.backgroundColor = color;
+        par.appendChild(newElement);
     }
 }
 
+
+
 document.getElementById("canvas").addEventListener("mousedown", mouseDown);
 document.getElementById("canvas").addEventListener("mouseup", mouseUp);
-
-
 document.getElementById("canvas").addEventListener("mousemove", function (event) {
-    getClickCoords(event)
+    getClickCoords(event);
 });
-
