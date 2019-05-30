@@ -48,6 +48,20 @@ body {
 .tool-circle.eraser {
     background-color: white;
 }
+.tool.circle {
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+.tool.square {
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 0;
+    display: inline-block;
+}
 .canvas {
     height: 500px;
     width: 500px;
