@@ -1,6 +1,6 @@
 var color = "lightcoral";
 var mouseClicked = false;
-//var shape="tool circle";
+var shape="tool circle";
 
 function mouseDown() {
     mouseClicked = true;
