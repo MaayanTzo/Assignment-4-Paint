@@ -1,27 +1,44 @@
 body {
     margin: 0;
-    display: flex;
     background-color:rgb(233, 216, 216); 
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/graffiti.jpg')
 }
-.page {
+.page-top {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 750px;
-    width: 800px;
+    align-items: flex-end;
+    height: 600px;
 }
 .tools {
     background-color: rgb(175, 173, 173);
     height: 500px;
-    width: 200px;
-    margin-right: 10px;
-}
-.tools.top {
+    width: 50px;
+    margin: 0px 10px 10px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 50%;
+}
+.canvas {
+    height: 500px;
+    width: 500px;
+    background-color: white; 
+    margin-bottom: 10px;
+}
+.page-bottom {
+    display: flex;
+    justify-content: center;
+}
+.bottom.panel {
+    background-color: rgb(175, 173, 173);
+    height: 50px;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 60px;
 }
 .tool-circle {
     height: 25px;
@@ -62,9 +79,25 @@ body {
     border-radius: 0;
     display: inline-block;
 }
-.canvas {
-    height: 500px;
-    width: 500px;
-    background-color: white; 
+.tool-size.c.small {
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+.tool-size.c.medium {
+    height: 18px;
+    width: 18px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+.tool-size.c.large {
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
 }
 

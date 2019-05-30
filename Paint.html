@@ -17,26 +17,34 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-    <div class="page">
+    <div class="page-top">
         <div class="tools">
-            <div class="tools top">
-                <div id ="lightcoral" class="tool-circle one" ></div>
-                <div id="lightblue" class="tool-circle two" ></div>
-                <div id="yellow" class="tool-circle three" ></div>
-                <div id="lightgreen" class="tool-circle four" ></div>
-                <div id="lavender" class="tool-circle five" ></div>
-            </div>
-            <div class="tools bottom">
-                <div id = "white" class="tool-circle eraser"></div>
-                <div id = "circle" class = "tool circle"></div>
-                <div id = "square" class = "tool square"></div>
-            </div>
+            <div id="lightcoral" class="tool-circle one"></div>
+            <div id="lightblue" class="tool-circle two"></div>
+            <div id="yellow" class="tool-circle three"></div>
+            <div id="lightgreen" class="tool-circle four"></div>
+            <div id="lavender" class="tool-circle five"></div>
         </div>
         <div class="canvas" id="canvas">
         </div>
-
-
     </div>
+    <div class="page-bottom">
+        <div class="bottom panel">
+            <div>Eraser</div>
+            <div id="white" class="tool-circle eraser"></div>
+            <div>Shape</div>
+            <div id="circle" class="tool circle"></div>
+            <div id="square" class="tool square"></div>
+            <div>Size</div>
+            <div id="small" class="tool-size c small" style="height:10px; width: 10px;"></div>
+            <div id="medium" class="tool-size c medium" style="height:18px; width: 18px;"></div>
+            <div id="large" class="tool-size c large" style="height:25px; width: 25px;"></div>
+
+        </div>
+    </div>
+
+
+
 
     <script src="./js/Paint.js"></script>
 </body>
