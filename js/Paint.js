@@ -47,8 +47,8 @@ function sizePicker(e) {
 }
 
 function getClickCoords(event) {
-    var x = event.clientX;
-    var y = event.clientY;
+    var x = event.clientX - document.getElementById("canvas").offsetLeft;
+    var y = event.clientY - document.getElementById("canvas").offsetTop;
     var coor = {
         "x": x,
         "y": y
@@ -70,6 +70,7 @@ function drawCircle(coords, color, shape, size) {
         par.appendChild(newElement);
     }
 }
+
 
 
 
