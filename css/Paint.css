@@ -27,6 +27,7 @@ body {
     background-color: white; 
     margin-bottom: 10px;
     position: relative;
+    overflow:hidden;
 }
 
 .page-bottom {

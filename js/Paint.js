@@ -2,6 +2,8 @@ var color = "lightcoral";
 var mouseClicked = false;
 var shape = "tool circle";
 var size = "tool-size";
+//since the canvas element is used often during the whole code, it may be useful to create a variable (const)
+
 
 function mouseDown() {
     mouseClicked = true;
@@ -9,6 +11,7 @@ function mouseDown() {
 function mouseUp() {
     mouseClicked = false;
 }
+// very useful to use this function instead of looking for the mouse event
 
 var AllColors = document.getElementsByClassName("tool-circle");
 for (i = 0; i < AllColors.length; i++) {
@@ -37,7 +40,7 @@ for (i = 0; i < AllSizes.length; i++) {
     AllSizes[i].addEventListener("click", function (e) {
         sizePicker(e);
     })
-}
+}//good idea to use a loop instead of copying several times the document selector
 
 function sizePicker(e) {
     size = {
@@ -79,3 +82,7 @@ document.getElementById("canvas").addEventListener("mouseup", mouseUp);
 document.getElementById("canvas").addEventListener("mousemove", function (event) {
     getClickCoords(event);
 });
+
+
+// code is explicit and easy to read through  good job
+// maybe more clear by adding some comments in order to provide structure to your code
